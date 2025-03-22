@@ -1,0 +1,32 @@
+/* Style pour la section grise à gauche */
+.sidebar {
+    width: 15%;
+    height: 100vh;
+    background-color: #6c757d; /* Couleur grise */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Style pour les liens dans la sidebar */
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* Animation au survol */
+  }
+  
+  /* Effet au survol des liens */
+  .sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Style pour les icônes FontAwesome */
+  .sidebar a i {
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+  }

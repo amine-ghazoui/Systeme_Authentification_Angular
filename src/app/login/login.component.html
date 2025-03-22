@@ -1,0 +1,46 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow">
+          <!-- En-tête de la carte avec l'image -->
+          <div class="card-header text-white text-center">
+            <img src="enset.png" alt="Enset Image" class="card-header-img">
+            <div class="overlay">
+            </div>
+        </div>
+          <div class="card-body">
+            <form (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <label for="username" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="username"
+                  [(ngModel)]="username"
+                  name="username"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  [(ngModel)]="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Sign In</button>
+            </form>
+            <div class="mt-3 text-center">
+              <p class="mb-0">New User? <a routerLink="/signup">Click to sign up!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
