@@ -12,12 +12,12 @@ export class AuthGuard implements CanActivate {
   canActivate(): boolean {
     // Vérifie si l'utilisateur est connecté
     if (this.authService.isLoggedIn()) {
-      return true; // Autorise l'accès à la route
+      return true; 
     }
     else {
       // Redirige vers la page de connexion si l'utilisateur n'est pas connecté
       this.router.navigate(['/login']);
-      return false; // Bloque l'accès à la route
+      return false;
     }
   }
 }

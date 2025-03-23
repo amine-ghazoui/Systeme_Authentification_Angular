@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule       // Module pour gérer les formulaires et la liaison de données
   ],
   
-  // Liste des services disponibles au sein du module (vide ici)
+  // Liste des services disponibles au sein du module
   providers: [],
   
   // Définit le composant principal qui sera chargé au démarrage de l'application
